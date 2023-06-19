@@ -22,7 +22,7 @@ public class FixedRateProducer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    @Scheduled(fixedRate = 1000)
+//    @Scheduled(fixedRate = 1000)
     public void sendMessage() {
         var i = counter.incrementAndGet();
 
