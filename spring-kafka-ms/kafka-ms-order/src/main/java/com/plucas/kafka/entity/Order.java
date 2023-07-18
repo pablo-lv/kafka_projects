@@ -26,6 +26,7 @@ public class Order {
     @Column
     private String creditCardNumber;
 
+    @OneToMany(mappedBy = "order")
     private List<OrderItem> items;
 
     public List<OrderItem> getItems() {
